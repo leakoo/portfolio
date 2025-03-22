@@ -1,1 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Poppins&family=Roboto&display=swap');
 @import "tailwindcss";
+
+:root {
+    --background: #111;
+}
+
+body {
+    background-color: #111;
+    color: #DDD;
+    font-family: "Inter", sans-serif;
+}
+
+.menu-closed {
+    display: block;
+    width: 1.5rem;
+    height: 3px;
+    background-color: #DDD;
+    transition: transform 0.15s ease 0s;
+}
+
+.menu-open1 {
+    display: block;
+    width: 1.75rem;
+    height: 3px;
+    background-color: #DDD;
+    transform: rotate(45deg) translate(6px, 5px);
+}
+
+.menu-open2 {
+    opacity: 0;
+}
+
+.menu-open3 {
+    display: block;
+    width: 1.75rem;
+    height: 3px;
+    background-color: #DDD;
+    transform: rotate(-45deg) translate(6px, -5px);
+}
