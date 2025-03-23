@@ -7,5 +7,9 @@ menuBtn.addEventListener("click", () => {
     spans[1].classList.toggle("menu-open2");
     spans[2].classList.toggle("menu-open3");
 
-    popup.classList.toggle("hidden");
+    popup.classList.toggle("opacity-100")
+    popup.classList.toggle("opacity-0")
+    popup.classList.toggle('translate-x-0');
+    popup.classList.toggle('translate-x-full');
+    popup.classList.toggle('pointer-events-none');
 })
