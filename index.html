@@ -1,12 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/style.css" />
     <title>Portfolio</title>
   </head>
   <body>
+    <header>
+      <nav class="flex justify-between m-5">
+        <h2 class="text-3xl">Portfolio.</h2>
+
+        <!-- Menu icon (only on mobile) -->
+        <button id="menu-btn" class="cursor-pointer z-1">
+          <div class="space-y-1.25">
+            <span class="menu-closed"></span>
+            <span class="menu-closed"></span>
+            <span class="menu-closed"></span>
+          </div>
+        </button>
+
+        <!-- Mobile Popup -->
+        <ul id="popup" class="flex-coloumn text-center content-center opacity-0 pointer-events-none absolute h-screen w-65 top-0 right-0 p-15 bg-[var(--bg-secondary)] translate-x-full transition-translate duration-300 ease-in-out">
+          <li class="text-xl p-2"><a href="" class="active:text-[#AAA]">HOME</a></li>
+          <li class="text-xl p-2"><a href="" class="active:text-[#AAA]">ABOUT</a></li>
+          <li class="text-xl p-2"><a href="" class="active:text-[#AAA]">PROJECTS</a></li>
+          <li class="text-xl p-2">
+
+            <a href="" class="p-0.75 active:text-[#AAA]">GH</a>
+            <span class="inline-block bg-[#DDD] w-0.5 h-4"></span>
+            <a href="" class="p-0.75 active:text-[#AAA]">LI</a>
+            <span class="inline-block bg-[#DDD] w-0.5 h-4"></span>
+            <a href="" class="p-0.75 active:text-[#AAA]">EM</a>
+            
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
