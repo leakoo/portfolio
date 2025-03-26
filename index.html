@@ -7,6 +7,7 @@
     <title>Portfolio</title>
   </head>
   <body>
+    <div id="tsparticles" class="absolute -z-10"></div>
     <header>
       <nav class="flex justify-between m-5">
         <h2 class="text-3xl">Portfolio.</h2>
@@ -21,22 +22,40 @@
         </button>
 
         <!-- Mobile Popup -->
-        <ul id="popup" class="flex-coloumn text-center content-center opacity-0 pointer-events-none absolute h-screen w-65 top-0 right-0 p-15 bg-[var(--bg-secondary)] translate-x-full transition-translate duration-300 ease-in-out">
-          <li class="text-xl p-2"><a href="" class="active:text-[#AAA]">HOME</a></li>
-          <li class="text-xl p-2"><a href="" class="active:text-[#AAA]">ABOUT</a></li>
-          <li class="text-xl p-2"><a href="" class="active:text-[#AAA]">PROJECTS</a></li>
+        <ul
+          id="popup"
+          class="flex-coloumn text-center content-center opacity-0 pointer-events-none absolute h-screen w-65 top-0 right-0 p-15 bg-[var(--bg-secondary)] translate-x-full transition-translate duration-300 ease-in-out"
+        >
           <li class="text-xl p-2">
-
-            <a href="" class="p-0.75 active:text-[#AAA]">GH</a>
-            <span class="inline-block bg-[#DDD] w-0.5 h-4"></span>
-            <a href="" class="p-0.75 active:text-[#AAA]">LI</a>
-            <span class="inline-block bg-[#DDD] w-0.5 h-4"></span>
-            <a href="" class="p-0.75 active:text-[#AAA]">EM</a>
-            
+            <a href="" class="active:text-[#AAA]">HOME</a>
+          </li>
+          <li class="text-xl p-2">
+            <a href="" class="active:text-[#AAA]">ABOUT</a>
+          </li>
+          <li class="text-xl p-2">
+            <a href="" class="active:text-[#AAA]">PROJECTS</a>
+          </li>
+          <li class="text-xl p-2">
+            <a href="" class="active:text-[#AAA]">GH |</a>
+            <a href="" class="active:text-[#AAA]">LI |</a>
+            <a href="" class="active:text-[#AAA]">EM </a>
           </li>
         </ul>
       </nav>
     </header>
+
+    <!-- HERO -->
+    <section class="mt-30">
+      <div class="m-5">
+        <h1 class="text-3xl font-bold pb-3">
+          Hey there!, <br />I'm Dan Leakey.
+        </h1>
+        <h2 class="text-xl pb-5">Aspiring Frontend Developer</h2>
+        <button class="cursor-pointer font-bold bg-[var(--bg-primary)] p-3 border-2 rounded-3xl active:bg-[var(--bg-secondary)]">
+          See My Projects
+        </button>
+      </div>
+    </section>
 
     <script type="module" src="/src/main.js"></script>
   </body>
