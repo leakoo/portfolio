@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
     <link rel="stylesheet" href="/src/style.css" />
     <title>Portfolio</title>
   </head>
@@ -21,24 +22,31 @@
           </div>
         </button>
 
-        <!-- Mobile Popup -->
+        <!-- Mobile Menu Popup -->
         <ul
           id="popup"
-          class="flex-coloumn text-center content-center opacity-0 pointer-events-none absolute h-screen w-65 top-0 right-0 p-15 bg-[var(--bg-secondary)] translate-x-full transition-translate duration-300 ease-in-out"
+          class="flex-coloumn text-center content-center opacity-0 pointer-events-none absolute h-screen w-65 top-0 right-0 p-10 bg-[var(--bg-secondary)] translate-x-full transition-translate duration-300 ease-in-out"
         >
           <li class="text-xl p-2">
-            <a href="#home" class="active:text-[#AAA]">HOME</a>
+            <a href="#home" class="hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out">HOME</a>
           </li>
           <li class="text-xl p-2">
-            <a href="#about" class="active:text-[#AAA]">ABOUT</a>
+            <a href="#about" class="hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out">ABOUT</a>
           </li>
           <li class="text-xl p-2">
-            <a href="#projects" class="active:text-[#AAA]">PROJECTS</a>
+            <a href="#projects" class="hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out">PROJECTS</a>
           </li>
-          <li class="text-xl p-2">
-            <a href="https://github.com/leakoo" target="_blank" class="active:text-[#AAA]">GH |</a>
-            <a href="" class="active:text-[#AAA]">LI |</a>
-            <a href="mailto:danleakey747@gmail.com" class="active:text-[#AAA]">EM </a>
+          <!-- Contact Links -->
+          <li class="text-3xl p-3">
+            <a href="https://github.com/leakoo" target="_blank">
+              <i class="ti ti-brand-github hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out"></i> |
+            </a>
+            <a href="https://www.linkedin.com/in/danleakey333/" target="_blank">
+              <i class="ti ti-brand-linkedin-filled hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out"></i> |
+            </a>
+            <a href="mailto:danleakey947@gmail.com">
+              <i class="ti ti-mail-filled hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out"></i>
+            </a>
           </li>
         </ul>
       </nav>
@@ -51,7 +59,7 @@
           Hey there!, <br />I'm Dan Leakey.
         </h1>
         <h2 class="text-xl pb-5">Aspiring Frontend Developer</h2>
-        <button class="cursor-pointer font-bold bg-[var(--bg-primary)] p-3 border-2 rounded-3xl active:bg-[var(--bg-secondary)]">
+        <button class="cursor-pointer font-bold bg-[var(--bg-primary)] p-3 border-2 rounded-3xl hover:bg-[var(--bg-secondary)] active:p-2.75 transition-colors duration-200 ease-in-out">
           See My Projects
         </button>
       </div>
