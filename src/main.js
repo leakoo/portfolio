@@ -21,9 +21,20 @@ const toggleMenuTransition = () => {
   popup.classList.toggle("pointer-events-none");
 };
 
+const closeMenu = () => {
+  toggleMenu();
+  toggleMenuTransition();
+};
+
 menuBtn.addEventListener("click", () => {
   toggleMenu();
   toggleMenuTransition();
+});
+
+menuLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    closeMenu();
+  });
 });
 
 loadParticles();
