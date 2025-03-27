@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Poppins&family=Roboto&display=swap');
 @import "tailwindcss";
 
+/* Global Variables*/
 :root {
     --bg-primary: #111;
     --bg-secondary: #1D1D1D;
@@ -9,11 +10,12 @@
 
 body {
     background-color: var(--bg-primary);
-    color: #DDD;
+    color: var(--text-color);
     font-family: "Inter", sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
+/* Hamburger Menu Styles */
 .menu-closed {
     display: block;
     width: 1.5rem;
@@ -40,4 +42,8 @@ body {
     height: 3px;
     background-color: var(--text-color);
     transform: rotate(-45deg) translate(6px, -5px);
+}
+
+.slanted {
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
 }
