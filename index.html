@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="/src/style.css" />
     <title>Portfolio</title>
   </head>
@@ -13,8 +14,8 @@
       <nav class="flex justify-between m-5">
         <h2 class="text-3xl">Portfolio.</h2>
 
-        <!-- Menu icon (only on mobile) -->
-        <button id="menu-btn" class="cursor-pointer z-1">
+        <!-- Menu icon (only on mobile)-->
+        <button id="menu-btn" class="cursor-pointer z-5">
           <div class="space-y-1.25">
             <span class="menu-closed"></span>
             <span class="menu-closed"></span>
@@ -25,7 +26,7 @@
         <!-- Mobile Menu Popup -->
         <ul
           id="popup"
-          class="flex-coloumn text-center content-center opacity-0 pointer-events-none absolute h-screen w-65 top-0 right-0 p-10 bg-[var(--bg-secondary)] translate-x-full transition-translate duration-300 ease-in-out"
+          class="flex-coloumn text-center content-center opacity-0 pointer-events-none absolute z-1 h-screen w-65 top-0 right-0 p-10 bg-[var(--bg-secondary)] translate-x-full transition-translate duration-300 ease-in-out"
         >
           <li class="text-xl p-2">
             <a href="#home" class="hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out">HOME</a>
@@ -58,13 +59,42 @@
         <h1 class="text-3xl font-bold pb-3">
           Hey there!, <br />I'm Dan Leakey.
         </h1>
-        <h2 class="text-xl pb-5">Aspiring Frontend Developer</h2>
-        <button class="cursor-pointer font-bold bg-[var(--bg-primary)] p-3 border-2 rounded-3xl hover:bg-[var(--bg-secondary)] active:p-2.75 transition-colors duration-200 ease-in-out">
+        <h3 class="text-xl pb-5">Aspiring Frontend Developer</h3>
+        <button class="cursor-pointer font-bold bg-[var(--bg-primary)] p-3 border-2 rounded-3xl hover:bg-[var(--bg-secondary)] active:scale-95 transition-colors duration-200 ease-in-out">
           See My Projects
         </button>
       </div>
     </section>
 
-    <script type="module" src="/src/main.js"></script>
+    <!-- ABOUT ME -->
+     <section id="about" class="bg-[var(--bg-secondary)] h-225 mt-30 mb-30 pt-20 pb-20 slanted">
+      <div class="m-5">
+        <h2 class="text-2xl font-bold mb-5">ABOUT ME</h2>
+        <p class="text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae eius ab ullam? Dolorem beatae repudiandae itaque vitae aut est. Nemo, inventore alias molestiae eum possimus sed omnis delectus atque? Distinctio?</p>
+        <br>
+        <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit doloremque dolorem recusandae, harum necessitatibus enim asperiores minus deserunt aperiam blanditiis voluptates ducimus debitis nobis perspiciatis sapiente, sint dolore voluptate repudiandae.</p>
+      </div>
+
+      <div class="m-5">
+        <h2 class="font-bold text-2xl mb-5">SKILLS</h2>
+        <div class="marquee flex gap-9">
+          <div class="marquee-content flex gap-9">
+            <i class="devicon-html5-plain-wordmark text-7xl"></i>
+            <i class="devicon-css3-plain-wordmark text-7xl"></i>
+            <i class="devicon-javascript-plain text-7xl"></i>
+            <i class="devicon-react-original text-7xl"></i>
+            <i class="devicon-tailwindcss-original text-7xl"></i>
+            <i class="devicon-git-plain text-7xl"></i>
+            <i class="devicon-vitejs-plain text-7xl"></i>
+            <i class="devicon-npm-original-wordmark text-7xl"></i>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     <div class="p-100">
+
+     </div>
+    <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
