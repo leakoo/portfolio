@@ -1,4 +1,5 @@
 import loadParticles from "./particles.js";
+import marquee from "./animations.js";
 
 const menuBtn = document.getElementById("menu-btn");
 const spans = menuBtn.querySelectorAll("span");
@@ -26,11 +27,13 @@ const closeMenu = () => {
   toggleMenuTransition();
 };
 
+//Open Menu when clicked
 menuBtn.addEventListener("click", () => {
   toggleMenu();
   toggleMenuTransition();
 });
 
+//Close Menu after a link is clicked
 menuLinks.forEach(link => {
   link.addEventListener("click", () => {
     closeMenu();
@@ -38,3 +41,4 @@ menuLinks.forEach(link => {
 });
 
 loadParticles();
+marquee();
