@@ -1,6 +1,7 @@
 import gsap from "gsap";
 
-const marquee = () => {
+const animations = () => {
+  //      MARQUEE ANIMATION
   const marquee = document.querySelector(".marquee");
   const marqueeContent = document.querySelector(".marquee-content");
   
@@ -58,6 +59,9 @@ const marquee = () => {
 
   //Call Debounce on window resize
   window.addEventListener("resize", debounce(playMarquee));
+
+  //      OTHER ANIMATIONS
+
 };
 
-export default marquee;
+export default animations;
