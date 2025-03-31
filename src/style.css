@@ -11,7 +11,7 @@
 body {
     background-color: var(--bg-primary);
     color: var(--text-color);
-    font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif;
     overflow-x: hidden;
 }
 
