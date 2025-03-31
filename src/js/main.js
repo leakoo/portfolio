@@ -1,5 +1,5 @@
 import loadParticles from "./particles.js";
-import marquee from "./animations.js";
+import animations from "./animations.js";
 
 const menuBtn = document.getElementById("menu-btn");
 const spans = menuBtn.querySelectorAll("span");
@@ -41,4 +41,4 @@ menuLinks.forEach(link => {
 });
 
 loadParticles();
-marquee();
+animations();
