@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en">
+<html id="home" class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
         <h2 class="text-3xl">Portfolio.</h2>
 
         <!-- Menu icon (only on mobile)-->
-        <button id="menu-btn" class="cursor-pointer z-5">
+        <button id="menu-btn" class="fixed top-7 right-5 cursor-pointer z-5">
           <div class="space-y-1.25">
             <span class="menu-closed"></span>
             <span class="menu-closed"></span>
@@ -26,7 +26,7 @@
         <!-- Mobile Menu Popup -->
         <ul
           id="popup"
-          class="flex-coloumn text-center content-center opacity-0 pointer-events-none absolute z-1 h-screen w-65 top-0 right-0 p-10 bg-[var(--bg-secondary)] translate-x-full transition-translate duration-300 ease-in-out"
+          class="fixed flex-coloumn text-center content-center opacity-0 pointer-events-none absolute z-1 h-screen w-65 top-0 right-0 p-10 bg-[var(--bg-secondary)] translate-x-full transition-translate duration-300 ease-in-out"
         >
           <li class="text-xl p-2">
             <a href="#home" class="hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out">HOME</a>
