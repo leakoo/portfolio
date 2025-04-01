@@ -59,8 +59,8 @@
         <h1 class="text-3xl font-bold pb-3">
           Hey there!, <br />I'm Dan Leakey.
         </h1>
-        <h3 class="text-xl pb-5">Aspiring Frontend Developer</h3>
-        <button class="cursor-pointer font-bold bg-[var(--bg-primary)] p-3 border-2 rounded-3xl hover:bg-[var(--bg-secondary)] active:scale-95 transition-colors duration-200 ease-in-out">
+        <h3 class="text-[1.17rem] pb-5">Aspiring Frontend Developer</h3>
+        <button class="heroCTA cursor-pointer font-bold bg-[var(--bg-primary)] p-3 border-2 rounded-3xl hover:bg-[var(--bg-secondary)] active:scale-95 transition-colors duration-200 ease-in-out">
           See My Projects
         </button>
       </div>
@@ -101,9 +101,31 @@
       </div>
      </section>
 
-     <div class="p-100">
+     <!-- PROJECTS SECTION -->
+     <section id="projects" class="m-5">
+      <h2 class="text-2xl font-bold mb-5">MY PROJECTS</h2>
 
-     </div>
+      <!-- JAMMMING -->
+      <article class="card bg-[var(--bg-secondary)] rounded-xl p-3">
+        <h3 class="text-xl text-center font-bold mb-3">Jammming</h3>
+        <img class="rounded" src="/assets/Jammming.png" alt="Jammming project screenshot">
+        <div class="rounded-lg mt-3 p-1">
+          <p class="mb-2">Jammming is a web app that can search songs and save them to a playlist onto your account.</p>
+          <h3 class="text-xl font-bold mb-1">Tech Used</h3>
+          <div class="flex items-center">
+            <p>React, CSS, Spotify Web API</p>
+            <a href="https://github.com/leakoo/Jammming" target="_blank" class="text-2xl pr-1">
+              <i class="ti ti-brand-github hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out"></i>
+            </a>
+            <a href="https://leakoojammming.netlify.app/" target="_blank" class="text-2xl pl-1">
+              <i class="ti ti-external-link hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+
+     </section>
+
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
