@@ -5,6 +5,7 @@ const menuBtn = document.getElementById("menu-btn");
 const spans = menuBtn.querySelectorAll("span");
 const popup = document.getElementById("popup");
 const menuLinks = popup.querySelectorAll("a");
+const heroCTA = document.querySelector(".heroCTA");
 
 const toggleMenu = () => {
   //Change Menu to a X
@@ -39,6 +40,11 @@ menuLinks.forEach(link => {
     closeMenu();
   });
 });
+
+heroCTA.addEventListener("click", () => {
+  const projectsSection = document.getElementById("projects");
+  projectsSection.scrollIntoView();
+})
 
 loadParticles();
 animations();
