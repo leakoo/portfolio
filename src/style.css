@@ -3,7 +3,7 @@
 
 /* Tailwind Custom Breakpoints*/
 @theme {
-  --breakpoint-3xs: 23.4375rem;
+  --breakpoint-3xs: 26.25rem; /*420px*/
 }
 
 /* Global Variables*/
