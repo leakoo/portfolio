@@ -5,6 +5,7 @@
 @theme {
   --breakpoint-3xs: 26.25rem; /*420px*/
   --breakpoint-2xs: 29.6875rem; /*475px*/
+  --breakpoint-xs: 35rem; /*560px*/
 }
 
 /* Global Variables*/
