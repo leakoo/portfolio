@@ -11,11 +11,11 @@
   <body>
     <div id="tsparticles" class="absolute -z-10"></div>
     <header>
-      <nav class="flex justify-between m-5 2xs:mx-8">
+      <nav class="flex justify-between m-5 2xs:mx-8 xs:mx-14">
         <h2 class="text-3xl">Portfolio.</h2>
 
         <!-- Menu icon (only on mobile)-->
-        <button id="menu-btn" class="fixed top-7 right-5 cursor-pointer z-5 2xs:right-8">
+        <button id="menu-btn" class="fixed top-7 right-5 cursor-pointer z-5 2xs:right-8 xs:right-14">
           <div class="space-y-1.25">
             <span class="menu-closed"></span>
             <span class="menu-closed"></span>
@@ -28,17 +28,17 @@
           id="popup"
           class="fixed flex-coloumn text-center content-center opacity-0 pointer-events-none z-1 h-screen w-[85%] top-0 right-0 p-10 bg-[var(--bg-secondary)] translate-x-full transition-translate duration-300 ease-in-out"
         >
-          <li class="text-xl p-2">
+          <li class="text-xl p-2 xs:text-2xl">
             <a href="#home" class="hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out">HOME</a>
           </li>
-          <li class="text-xl p-2">
+          <li class="text-xl p-2 xs:text-2xl">
             <a href="#about" class="hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out">ABOUT</a>
           </li>
-          <li class="text-xl p-2">
+          <li class="text-xl p-2 xs:text-2xl">
             <a href="#projects" class="hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out">PROJECTS</a>
           </li>
           <!-- Contact Links -->
-          <li class="text-3xl p-3">
+          <li class="text-3xl p-3 xs:text-4xl">
             <a href="https://github.com/leakoo" target="_blank">
               <i class="ti ti-brand-github hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out"></i> |
             </a>
@@ -55,7 +55,7 @@
 
     <!-- HERO -->
     <section class="mt-30">
-      <div class="m-5 2xs:mx-8">
+      <div class="m-5 2xs:mx-8 xs:mx-14">
         <h1 class="text-4xl font-bold pb-3 3xs:text-[2.75rem]">
           Hey there!, <br />I'm Dan Leakey.
         </h1>
@@ -68,7 +68,7 @@
 
     <!-- ABOUT ME -->
      <section class="bg-[var(--bg-secondary)] mt-30 mb-25 pt-15 pb-20 slanted">
-      <div id="about" class="m-5 mb-10 pt-6 2xs:mx-8">
+      <div id="about" class="m-5 mb-10 pt-6 2xs:mx-8 xs:mx-14">
         <h2 class="text-2xl font-bold mb-5 2xs:text-3xl">ABOUT ME</h2>
         <p class="text-lg 2xs:text-xl">
           Hi, I’m Dan, an aspiring frontend developer passionate about building web experiences from the ground up with clean, visually appealing designs. 
@@ -84,29 +84,29 @@
       </div>
 
       <!-- SKILLS MARQUEE -->
-      <div class="m-5 2xs:mx-8">
+      <div class="m-5 2xs:mx-8 xs:mx-14">
         <h2 class="font-bold text-2xl mb-5 2xs:text-3xl">SKILLS</h2>
         <div class="marquee flex gap-9">
-          <div class="marquee-content flex gap-9">
-            <i class="devicon-html5-plain-wordmark text-7xl"></i>
-            <i class="devicon-css3-plain-wordmark text-7xl"></i>
-            <i class="devicon-javascript-plain text-7xl"></i>
-            <i class="devicon-react-original text-7xl"></i>
-            <i class="devicon-tailwindcss-original text-7xl"></i>
-            <i class="devicon-git-plain text-7xl"></i>
-            <i class="devicon-vitejs-plain text-7xl"></i>
-            <i class="devicon-npm-original-wordmark text-7xl"></i>
+          <div class="marquee-content flex gap-9 text-7xl">
+            <i class="devicon-html5-plain-wordmark"></i>
+            <i class="devicon-css3-plain-wordmark"></i>
+            <i class="devicon-javascript-plain"></i>
+            <i class="devicon-react-original"></i>
+            <i class="devicon-tailwindcss-original"></i>
+            <i class="devicon-git-plain"></i>
+            <i class="devicon-vitejs-plain"></i>
+            <i class="devicon-npm-original-wordmark"></i>
           </div>
         </div>
       </div>
      </section>
 
      <!-- PROJECTS SECTION -->
-     <section id="projects" class="pt-6 m-5 2xs:mx-8">
+     <section id="projects" class="pt-6 m-5 2xs:mx-8 xs:mx-14">
       <h2 class="text-2xl font-bold mb-5 2xs:text-3xl">MY PROJECTS</h2>
 
       <!-- JAMMMING -->
-      <article class="card bg-[var(--bg-secondary)] min-h-95 flex flex-col rounded-xl p-3">
+      <article class="card bg-[var(--bg-secondary)] min-h-95 flex flex-col rounded-xl p-3 xs:p-5">
         <h3 class="text-xl text-center font-bold mb-3">Jammming</h3>
         <img class="rounded" src="/assets/Jammming.png" alt="Jammming project screenshot">
         <div class="rounded-lg mt-3 p-1">
@@ -114,11 +114,11 @@
           <h3 class="text-xl font-bold mb-1">Tech Used</h3>
           <div class="flex items-center justify-between">
             <p class="2xs:text-lg">React, CSS, Spotify Web API</p>
-            <div class="flex gap-3">
-              <a href="https://github.com/leakoo/Jammming" target="_blank" class="text-2xl">
+            <div class="flex gap-3 text-2xl xs:text-3xl">
+              <a href="https://github.com/leakoo/Jammming" target="_blank">
                 <i class="ti ti-brand-github hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out"></i>
               </a>
-              <a href="https://leakoojammming.netlify.app/" target="_blank" class="text-2xl">
+              <a href="https://leakoojammming.netlify.app/" target="_blank">
                 <i class="ti ti-external-link hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out"></i>
               </a>
             </div>
@@ -127,7 +127,7 @@
       </article>
 
       <!-- CUP CAFE -->
-      <article class="card bg-[var(--bg-secondary)] min-h-95 rounded-xl mt-10 p-3">
+      <article class="card bg-[var(--bg-secondary)] min-h-95 rounded-xl mt-10 p-3 xs:p-5">
         <h3 class="text-xl text-center font-bold mb-3">Cup Café</h3>
         <img class="rounded" src="/assets/CupCafe.png" alt="Jammming project screenshot">
         <div class="rounded-lg mt-3 p-1">
@@ -135,11 +135,11 @@
           <h3 class="text-xl font-bold mb-1">Tech Used</h3>
           <div class="flex items-center justify-between">
             <p class="2xs:text-lg">HTML, CSS, JavaScript</p>
-            <div class="flex gap-3">
-              <a href="https://github.com/leakoo/CupCafe" target="_blank" class="text-2xl">
+            <div class="flex gap-3 xs:text-3xl">
+              <a href="https://github.com/leakoo/CupCafe" target="_blank">
                 <i class="ti ti-brand-github hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out"></i>
               </a>
-              <a href="https://cupcafe.netlify.app/" target="_blank" class="text-2xl">
+              <a href="https://cupcafe.netlify.app/" target="_blank">
                 <i class="ti ti-external-link hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out"></i>
               </a>
             </div>
