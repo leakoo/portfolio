@@ -11,11 +11,11 @@
   <body>
     <div id="tsparticles" class="absolute -z-10"></div>
     <header>
-      <nav class="flex justify-between m-5 2xs:mx-8 xs:mx-14 sm:mx-20">
-        <h2 class="text-3xl">Portfolio.</h2>
+      <nav class="flex justify-between m-5 2xs:mx-8 xs:mx-14 sm:mx-20 md:mx-30">
+        <h2 class="text-3xl md:text-4xl">Portfolio.</h2>
 
         <!-- Menu icon (only on mobile)-->
-        <button id="menu-btn" class="fixed top-7 right-5 cursor-pointer z-5 2xs:right-8 xs:right-14 sm:right-20">
+        <button id="menu-btn" class="fixed top-7 right-5 cursor-pointer z-5 2xs:right-8 xs:right-14 sm:right-20 md:right-30">
           <div class="space-y-1.25">
             <span class="menu-closed"></span>
             <span class="menu-closed"></span>
@@ -54,29 +54,28 @@
     </header>
 
     <!-- HERO -->
-    <section class="mt-30">
-      <div class="m-5 2xs:mx-8 xs:mx-14 sm:mx-20">
-        <h1 class="text-4xl font-bold pb-3 3xs:text-[2.75rem] xs:text-5xl sm:text-6xl">
+    <section class="mt-30 flex justify-center sm:mt-40 md:mt-45">
+      <div class="m-5">
+        <h1 class="text-4xl font-bold pb-3 3xs:text-[2.75rem] xs:text-5xl sm:text-6xl md:text-7xl">
           Hey there!, <br />I'm Dan Leakey.
         </h1>
-        <h3 class="text-lg pb-5 3xs:text-xl sm:text-2xl">Aspiring Frontend Developer</h3>
-        <button class="heroCTA cursor-pointer font-bold bg-[var(--bg-primary)] w-40 h-13 sm:w-45 sm:h-15 sm:text-lg sm:rounded-full border-2 rounded-3xl hover:bg-[var(--bg-secondary)] active:scale-95 transition-colors duration-200 ease-in-out ">
+        <h3 class="text-lg pb-5 3xs:text-xl sm:text-2xl md:text-3xl">Aspiring Frontend Developer</h3>
+        <button class="heroCTA cursor-pointer font-bold bg-[var(--bg-primary)] border-2 rounded-3xl w-40 h-13 sm:w-45 sm:h-15 sm:text-lg sm:rounded-full md:w-50 md:h-17 md:text-xl hover:bg-[var(--bg-secondary)] active:scale-95 transition-colors duration-200 ease-in-out ">
           See My Projects
         </button>
       </div>
     </section>
 
     <!-- ABOUT ME -->
-     <section class="bg-[var(--bg-secondary)] mt-30 mb-25 pt-15 pb-20 slanted">
-      <div id="about" class="m-5 mb-10 pt-6 2xs:mx-8 xs:mx-14 sm:mx-20">
-        <h2 class="text-2xl font-bold mb-5 2xs:text-3xl">ABOUT ME</h2>
-        <p class="text-lg 2xs:text-xl">
+     <section class="bg-[var(--bg-secondary)] mt-30 mb-25 pt-15 pb-20 slanted sm:mt-40 md:mt-45">
+      <div id="about" class="m-5 mb-10 pt-6 2xs:mx-8 xs:mx-14 sm:mx-20 md:mx-30">
+        <h2 class="text-2xl font-bold mb-5 2xs:text-3xl md:text-4xl">ABOUT ME</h2>
+        <p class="text-lg mb-5 2xs:text-xl md:text-2xl">
           Hi, I’m Dan, an aspiring frontend developer passionate about building web experiences from the ground up with clean, visually appealing designs. 
           I enjoy learning new technologies to sharpen my skills, with a strong focus on React. 
           Right now, I’m working on my portfolio, exploring GSAP for animations and planning to dive into TypeScript for future projects.
         </p>
-        <br>
-        <p class="text-lg 2xs:text-xl">
+        <p class="text-lg 2xs:text-xl md:text-2xl">
           I’ve mainly worked solo, so I’m both excited and curious about working with a team. 
           I love creating projects I’m passionate about, like a Chrome extension I’m eager to build. 
           My goal is to keep growing, refining my skills, and ultimately land a role in which I can contribute and learn from others.
@@ -85,9 +84,9 @@
 
       <!-- SKILLS MARQUEE -->
       <div class="m-5">
-        <h2 class="font-bold text-2xl mb-5 2xs:text-3xl 2xs:mx-3 xs:mx-9 sm:mx-15">SKILLS</h2>
+        <h2 class="font-bold text-2xl mb-5 2xs:text-3xl 2xs:mx-3 xs:mx-9 sm:mx-15 md:mx-25 md:text-4xl">SKILLS</h2>
         <div class="marquee flex gap-9">
-          <div class="marquee-content flex gap-9 text-7xl sm:text-8xl">
+          <div class="marquee-content flex gap-9 text-7xl sm:text-8xl md:text-[7rem]">
             <i class="devicon-html5-plain-wordmark"></i>
             <i class="devicon-css3-plain-wordmark"></i>
             <i class="devicon-javascript-plain"></i>
@@ -102,8 +101,8 @@
      </section>
 
      <!-- PROJECTS SECTION -->
-     <section id="projects" class="pt-6 m-5 2xs:mx-8 xs:mx-14 sm:mx-20">
-      <h2 class="text-2xl font-bold mb-5 2xs:text-3xl">MY PROJECTS</h2>
+     <section id="projects" class="pt-6 m-5 2xs:mx-8 xs:mx-14 sm:mx-20 md:mx-30">
+      <h2 class="text-2xl font-bold mb-5 2xs:text-3xl md:text-4xl">MY PROJECTS</h2>
 
       <!-- JAMMMING -->
       <article class="card bg-[var(--bg-secondary)] min-h-95 flex flex-col rounded-xl p-3 xs:p-5">
