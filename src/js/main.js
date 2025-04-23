@@ -1,11 +1,12 @@
 import loadParticles from "./particles.js";
-import animations from "./animations.js";
+import { playMarquee } from "./animations.js";
 
 const menuBtn = document.getElementById("menu-btn");
 const spans = menuBtn.querySelectorAll("span");
 const popup = document.getElementById("popup");
 const menuLinks = popup.querySelectorAll("a");
 const heroCTA = document.querySelector(".heroCTA");
+const lgMediaQuery = window.matchMedia("(min-width: 1024px)");
 
 const toggleMenu = () => {
   //Change Menu to a X
@@ -46,5 +47,21 @@ heroCTA.addEventListener("click", () => {
   projectsSection.scrollIntoView();
 })
 
+//Store Tween in a variable for control
+let marqueeTween = playMarquee();
+
+const handleMarquee = (e) => {
+  //If Viewport is 1024px or larger pause animation else play
+  if(e.matches) {
+    marqueeTween.pause();
+  } else {
+    marqueeTween.resume();
+  }
+}
+
+//Run HandleMarquee to init correct state
+handleMarquee(lgMediaQuery);
+//Event Listener to adjust animation on resize
+lgMediaQuery.addEventListener("change", handleMarquee);
+
 loadParticles();
-animations();
