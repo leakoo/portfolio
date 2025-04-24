@@ -7,6 +7,7 @@ const popup = document.getElementById("popup");
 const menuLinks = popup.querySelectorAll("a");
 const heroCTA = document.querySelector(".heroCTA");
 const lgMediaQuery = window.matchMedia("(min-width: 1024px)");
+const marquee = document.querySelector(".marquee");
 
 const toggleMenu = () => {
   //Change Menu to a X
@@ -53,9 +54,10 @@ let marqueeTween = playMarquee();
 const handleMarquee = (e) => {
   //If Viewport is 1024px or larger pause animation else play
   if(e.matches) {
-    marqueeTween.pause();
+    marquee.lastChild.remove();
+    marqueeTween.kill();
   } else {
-    marqueeTween.resume();
+    marqueeTween = playMarquee();
   }
 }
 
