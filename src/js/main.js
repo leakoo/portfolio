@@ -1,5 +1,6 @@
 import loadParticles from "./particles.js";
 import { playMarquee } from "./animations.js";
+import gsap from "gsap";
 
 const menuBtn = document.getElementById("menu-btn");
 const spans = menuBtn.querySelectorAll("span");
@@ -8,6 +9,7 @@ const menuLinks = popup.querySelectorAll("a");
 const heroCTA = document.querySelector(".heroCTA");
 const lgMediaQuery = window.matchMedia("(min-width: 1024px)");
 const marquee = document.querySelector(".marquee");
+const marqueeContent = document.querySelectorAll(".marquee-content");
 
 const toggleMenu = () => {
   //Change Menu to a X
@@ -53,9 +55,14 @@ let marqueeTween = playMarquee();
 
 const handleMarquee = (e) => {
   //If Viewport is 1024px or larger pause animation else play
-  if(e.matches) {
+  if (e.matches) {
     marquee.lastChild.remove();
     marqueeTween.kill();
+
+    marqueeContent.forEach(element => {
+      gsap.set(element, { clearProps: "transform" });
+    });
+
   } else {
     marqueeTween = playMarquee();
   }
