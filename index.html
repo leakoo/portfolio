@@ -11,8 +11,8 @@
   <body>
     <div id="tsparticles" class="absolute -z-10"></div>
     <header>
-      <nav class="flex justify-between m-5 2xs:mx-8 xs:mx-14 sm:mx-20 md:mx-30 lg:mx-15">
-        <h2 class="text-3xl md:text-4xl">Portfolio.</h2>
+      <nav class="flex justify-between m-5 2xs:mx-8 xs:mx-14 sm:mx-20 md:mx-30 lg:mx-15 lg:justify-center lg:content-center">
+        <h2 class="text-3xl md:text-4xl lg:hidden">Portfolio.</h2>
 
         <!-- Menu icon (only on mobile)-->
         <button id="menu-btn" class="fixed top-7 right-5 cursor-pointer z-5 2xs:right-8 xs:right-14 sm:right-20 md:right-30 lg:hidden">
@@ -37,6 +37,7 @@
           <li class="text-xl p-2 xs:text-2xl">
             <a href="#projects" class="hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out">PROJECTS</a>
           </li>
+          <!-- Popup Icon Links -->
           <li class="text-3xl p-3 xs:text-4xl">
             <a href="https://github.com/leakoo" target="_blank">
               <i class="ti ti-brand-github hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out"></i> |
@@ -49,11 +50,41 @@
             </a>
           </li>
         </ul>
+
+        <!-- Fixed Nav Bar on larger screens -->
+        <ul class="hidden z-10 fixed lg:bg-[var(--bg-secondary)] lg:flex lg:p-5 lg:gap-3 lg:rounded-4xl">
+          <li>
+            <a href="#Home">HOME</a>
+          </li>
+          <li>
+            <a href="#about">ABOUT</a>
+          </li>
+          <li>
+            <a href="#projects">PROJECTS</a>
+          </li>
+          <!-- Icon Links -->
+           <li>
+            <a href="https://github.com/leakoo">
+              <i class="ti ti-brand-github"></i>
+            </a>
+           </li>
+           <li>
+            <a href="https://www.linkedin.com/in/danleakey333/">
+              <i class="ti ti-brand-linkedin-filled"></i>
+            </a>
+           </li>
+           <li>
+            <a href="mailto:danleakey947@gmail.com">
+              <i class="ti ti-mail-filled"></i>
+            </a>
+           </li>
+        </ul>
+
       </nav>
     </header>
 
     <!-- HERO -->
-    <section class="mt-30 sm:mt-40 md:mt-45">
+    <section class="mt-30 sm:mt-40 md:mt-45 lg:mt-60">
       <div class="flex lg:justify-between lg:mx-15 lg:items-center">
         <div class="mx-5 2xs:mx-8 xs:mx-14 sm:mx-20 md:mx-30 lg:mx-0">
           <h1 class="text-4xl font-bold pb-3 3xs:text-[2.75rem] xs:text-5xl sm:text-6xl md:text-[4.2rem] lg:">
