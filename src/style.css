@@ -51,6 +51,18 @@ body {
   transform: rotate(-45deg) translate(6px, -5px);
 }
 
+.navBarTransition {
+  transition: color 2 ease-in-out;
+}
+
+.navBarTransition:hover {
+  color: #FFF;
+}
+
+.navBarTransition:active {
+  color: #AAA;
+}
+
 /* ABOUT ME slanted background */
 .slanted {
   clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
