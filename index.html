@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html id="home" class="scroll-smooth" lang="en">
+<html class="scroll-smooth" lang="en">
+  <section id="home" class="h-0 absolute top-0"></section>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,62 +30,60 @@
           class="fixed flex-coloumn text-center content-center opacity-0 pointer-events-none z-1 h-screen w-[85%] top-0 right-0 p-10 bg-[var(--bg-secondary)] translate-x-full transition-translate duration-300 ease-in-out"
         >
           <li class="text-xl p-2 xs:text-2xl">
-            <a href="#home" class="hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out">HOME</a>
+            <a href="#home" class="navBarTransition">HOME</a>
           </li>
           <li class="text-xl p-2 xs:text-2xl">
-            <a href="#about" class="hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out">ABOUT</a>
+            <a href="#about" class="navBarTransition">ABOUT</a>
           </li>
           <li class="text-xl p-2 xs:text-2xl">
-            <a href="#projects" class="hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out">PROJECTS</a>
+            <a href="#projects" class="navBarTransition">PROJECTS</a>
           </li>
           <!-- Popup Icon Links -->
           <li class="text-3xl p-3 xs:text-4xl">
             <a href="https://github.com/leakoo" target="_blank">
-              <i class="ti ti-brand-github hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out"></i> |
+              <i class="ti ti-brand-github navBarTransition"></i> |
             </a>
             <a href="https://www.linkedin.com/in/danleakey333/" target="_blank">
-              <i class="ti ti-brand-linkedin-filled hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out"></i> |
+              <i class="ti ti-brand-linkedin-filled navBarTransition"></i> |
             </a>
             <a href="mailto:danleakey947@gmail.com">
-              <i class="ti ti-mail-filled hover:text-[#FFF] active:text-[#AAA] transition-text duration-200 ease-in-out"></i>
+              <i class="ti ti-mail-filled navBarTransition"></i>
             </a>
           </li>
         </ul>
 
         <!-- Fixed Nav Bar on larger screens -->
-        <ul class="hidden z-10 fixed lg:bg-[var(--bg-secondary)] lg:flex lg:p-5 lg:gap-3 lg:rounded-4xl">
-          <li>
-            <a href="#Home">HOME</a>
-          </li>
-          <li>
-            <a href="#about">ABOUT</a>
-          </li>
-          <li>
-            <a href="#projects">PROJECTS</a>
-          </li>
+        <ul class="hidden z-10 fixed lg:w-110 lg:bg-[var(--bg-secondary)] lg:content-center lg:justify-center lg:flex lg:p-3 lg:gap-3 lg:rounded-full lg:border-(--bg-primary)">
+          <div class="flex gap-3 text-xl">
+            <li>
+              <a href="#home" class="navBarTransition nav-link">HOME</a>
+            </li>
+            <li>
+              <a href="#about" class="navBarTransition nav-link">ABOUT</a>
+            </li>
+            <li>
+              <a href="#projects" class="navBarTransition nav-link">PROJECTS</a>
+            </li>
+          </div>
           <!-- Icon Links -->
-           <li>
-            <a href="https://github.com/leakoo">
-              <i class="ti ti-brand-github"></i>
+          <li class="text-xl">
+            <a href="https://github.com/leakoo" target="_blank">
+              <i class="ti ti-brand-github navBarTransition"></i> |
             </a>
-           </li>
-           <li>
-            <a href="https://www.linkedin.com/in/danleakey333/">
-              <i class="ti ti-brand-linkedin-filled"></i>
+            <a href="https://www.linkedin.com/in/danleakey333/" target="_blank">
+              <i class="ti ti-brand-linkedin-filled navBarTransition"></i> |
             </a>
-           </li>
-           <li>
             <a href="mailto:danleakey947@gmail.com">
-              <i class="ti ti-mail-filled"></i>
+              <i class="ti ti-mail-filled navBarTransition"></i>
             </a>
-           </li>
+          </li>   
         </ul>
 
       </nav>
     </header>
 
     <!-- HERO -->
-    <section class="mt-30 sm:mt-40 md:mt-45 lg:mt-60">
+    <section class="mt-30 sm:mt-40 md:mt-45 lg:mt-55">
       <div class="flex lg:justify-between lg:mx-15 lg:items-center">
         <div class="mx-5 2xs:mx-8 xs:mx-14 sm:mx-20 md:mx-30 lg:mx-0">
           <h1 class="text-4xl font-bold pb-3 3xs:text-[2.75rem] xs:text-5xl sm:text-6xl md:text-[4.2rem] lg:">
@@ -102,9 +101,9 @@
     </section>
 
     <!-- ABOUT ME -->
-     <section class="bg-[var(--bg-secondary)] mt-30 mb-25 pt-15 pb-20 slanted sm:mt-40 md:mt-45">
+     <section id="about" class="bg-[var(--bg-secondary)] mt-30 mb-25 pt-15 pb-20 slanted sm:mt-40 md:mt-45">
       <div class="lg:flex lg:mx-15 lg:gap-x-15">
-        <div id="about" class="m-5 mb-10 pt-6 2xs:mx-8 xs:mx-14 sm:mx-20 md:mx-30 lg:mx-0 lg:mb-0">
+        <div class="m-5 mb-10 pt-6 2xs:mx-8 xs:mx-14 sm:mx-20 md:mx-30 lg:mx-0 lg:mb-0">
           <h2 class="text-2xl font-bold mb-5 2xs:text-3xl md:text-4xl lg:mb-0">ABOUT ME</h2>
           <p class="text-lg 2xs:text-xl md:text-2xl lg:mt-5">
             Hi, I’m Dan, an aspiring frontend developer passionate about building web experiences from the ground up with clean, visually appealing designs. 
