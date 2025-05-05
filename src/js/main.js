@@ -2,11 +2,16 @@ import loadParticles from "./particles.js";
 import { playMarquee } from "./animations.js";
 import gsap from "gsap";
 
+//For Mobile popup
 const menuBtn = document.getElementById("menu-btn");
 const spans = menuBtn.querySelectorAll("span");
 const popup = document.getElementById("popup");
 const menuLinks = popup.querySelectorAll("a");
+
+//For Project link
 const heroCTA = document.querySelector(".heroCTA");
+
+//For Pausing marquee 
 const lgMediaQuery = window.matchMedia("(min-width: 1024px)");
 const marquee = document.querySelector(".marquee");
 const marqueeContent = document.querySelectorAll(".marquee-content");
@@ -48,7 +53,7 @@ menuLinks.forEach(link => {
 heroCTA.addEventListener("click", () => {
   const projectsSection = document.getElementById("projects");
   projectsSection.scrollIntoView();
-})
+});
 
 //Store Tween in a variable for control
 let marqueeTween = playMarquee();
@@ -65,8 +70,8 @@ const handleMarquee = (e) => {
 
   } else {
     marqueeTween = playMarquee();
-  }
-}
+  };
+};
 
 //Run HandleMarquee to init correct state
 handleMarquee(lgMediaQuery);
