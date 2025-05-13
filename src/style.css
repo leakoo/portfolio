@@ -6,6 +6,7 @@
   --breakpoint-3xs: 26.25rem; /*420px*/
   --breakpoint-2xs: 29.6875rem; /*475px*/
   --breakpoint-xs: 35rem; /*560px*/
+  --breakpoint-3xl: 105rem; /*1680px*/
 }
 
 /* Global Variables*/
