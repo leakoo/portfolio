@@ -1,3 +1,4 @@
+import { tsParticles } from "@tsparticles/engine";
 import { loadFull } from "tsparticles";
 
 const loadParticles = async () => {
