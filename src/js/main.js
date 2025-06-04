@@ -61,8 +61,8 @@ let marqueeTween = playMarquee();
 const handleMarquee = (e) => {
   //If Viewport is 1024px or larger pause animation else play
   if (e.matches) {
-    marquee.lastChild.remove();
-    marqueeTween.kill();
+    if(marquee.lastChild) marquee.lastChild.remove();
+    if(marqueeTween) marqueeTween.kill();
 
     marqueeContent.forEach(element => {
       gsap.set(element, { clearProps: "transform" });
@@ -73,9 +73,15 @@ const handleMarquee = (e) => {
   };
 };
 
-//Run HandleMarquee to init correct state
-handleMarquee(lgMediaQuery);
-//Event Listener to adjust animation on resize
-lgMediaQuery.addEventListener("change", handleMarquee);
+window.addEventListener("load", () => {
+  //Only Run if marquee elements exist
+  if (marquee && marqueeContent.length > 0) {
+    marqueeTween = playMarquee();
+    //Run HandleMarquee to init correct state
+    handleMarquee(lgMediaQuery);
+    //Event Listener to adjust animation on resize
+    lgMediaQuery.addEventListener("change", handleMarquee);
+  }
+});
 
 loadParticles();
