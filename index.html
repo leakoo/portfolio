@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html class="overflow-x-hidden scroll-smooth" lang="en">
-  <section id="home" class="top-0 absolute h-0"></section>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dan's portfolio showcasing frontend dev projects using React, JavaScript, TailwindCSS and more."/>
+    <meta name="keywords" content="Frontend Developer, Web Developer, Portfolio, React, JavaScript, TailwindCSS"/>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="/src/style.css" />
     <title>Portfolio</title>
   </head>
   <body>
+    <section id="home" class="top-0 absolute h-0"></section>
     <div id="tsparticles" class="-z-10 absolute"></div>
     <header>
       <nav class="flex justify-between lg:justify-center lg:content-center m-5 2xs:mx-8 xs:mx-14 sm:mx-20 md:mx-30 lg:mx-15">
         <h2 class="lg:hidden text-3xl md:text-4xl">Portfolio.</h2>
 
         <!-- Menu icon (only on mobile)-->
-        <button id="menu-btn" class="lg:hidden top-7 right-5 2xs:right-8 xs:right-14 sm:right-20 md:right-30 z-5 fixed cursor-pointer">
+        <button id="menu-btn" aria-label="Open nav menu" class="lg:hidden top-7 right-5 2xs:right-8 xs:right-14 sm:right-20 md:right-30 z-5 fixed cursor-pointer">
           <div class="space-y-1.25">
             <span class="menu-closed"></span>
             <span class="menu-closed"></span>
@@ -27,7 +32,7 @@
         <!-- Mobile Menu Popup -->
         <ul
           id="popup"
-          class="top-0 right-0 z-1 fixed flex-coloumn content-center bg-[var(--bg-secondary)] opacity-0 p-10 w-[85%] h-screen text-center transition-translate translate-x-full duration-300 ease-in-out pointer-events-none"
+          class="top-0 right-0 z-1 fixed flex-col content-center bg-[var(--bg-secondary)] opacity-0 p-10 w-[85%] h-screen text-center transition-translate translate-x-full duration-300 ease-in-out pointer-events-none"
         >
           <li class="p-2 text-xl xs:text-2xl">
             <a href="#home" class="navBarTransition">HOME</a>
@@ -40,13 +45,13 @@
           </li>
           <!-- Popup Icon Links -->
           <li class="p-3 text-3xl xs:text-4xl">
-            <a href="https://github.com/leakoo" target="_blank">
+            <a href="https://github.com/leakoo" target="_blank" aria-label="GitHub profile">
               <i class="ti ti-brand-github navBarTransition"></i> |
             </a>
-            <a href="https://www.linkedin.com/in/danleakey333/" target="_blank">
+            <a href="https://www.linkedin.com/in/danleakey333/" target="_blank" aria-label="LinkedIn profile">
               <i class="ti ti-brand-linkedin-filled navBarTransition"></i> |
             </a>
-            <a href="mailto:danleakey947@gmail.com">
+            <a href="mailto:danleakey947@gmail.com" aria-label="Email">
               <i class="ti ti-mail-filled navBarTransition"></i>
             </a>
           </li>
@@ -65,13 +70,13 @@
           </li>
           <!-- Icon Links -->
           <li class="text-2xl">
-            <a href="https://github.com/leakoo" target="_blank">
+            <a href="https://github.com/leakoo" target="_blank" aria-label="GitHub profile">
               <i class="ti ti-brand-github navBarTransition"></i> |
             </a>
-            <a href="https://www.linkedin.com/in/danleakey333/" target="_blank">
+            <a href="https://www.linkedin.com/in/danleakey333/" target="_blank" aria-label="LinkedIn profile">
               <i class="ti ti-brand-linkedin-filled navBarTransition"></i> |
             </a>
-            <a href="mailto:danleakey947@gmail.com">
+            <a href="mailto:danleakey947@gmail.com" aria-label="Email">
               <i class="ti ti-mail-filled navBarTransition"></i>
             </a>
           </li>   
@@ -215,7 +220,7 @@
 
      <!-- FOOTER -->
      <footer class="flex-col mt-20 p-3 text-center">
-      <a href="#home" class="font-bold text-lg sm:text-xl">Back To Top</a>
+      <a href="#home" aria-label="Back to top of page" class="font-bold text-lg sm:text-xl">Back To Top</a>
       <p class="mt-3 sm:text-lg">&copy; 2025 Dan Leakey. All rights reserved.</p>
      </footer>
 
