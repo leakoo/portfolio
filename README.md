@@ -11,6 +11,12 @@ A personal portfolio showcasing an about section, featured projects and contact 
 
 ---
 
+## Demo
+
+https://leakoo-portfolio.vercel.app
+
+---
+
 ## Tech Stack
 
 **FrontEnd:** HTML, CSS, JavaScript, TailwindCSS, GSAP
@@ -18,6 +24,16 @@ A personal portfolio showcasing an about section, featured projects and contact 
 **Build Tools:** Vite, npm
 
 **Version Control & Hosting:** Git, GitHub and Vercel
+
+---
+
+## Features
+
+- Fully responsive layout
+- Smooth scroll navigation
+- Mobile-friendly menu toggle
+- Animated skills marquee (smaller screens)
+- Back to top button
 
 ---
 
@@ -45,19 +61,14 @@ CupCafé is a fictional coffee website with a Home page, Products Page and Conta
 
 ---
 
-## Features
+### **Pomodoro Chrome Extension**
+![Pomodoro Chrome Extension screenshot](https://github.com/leakoo/portfolio/raw/main/public/assets/pomodoroChromeExtension.png)
 
-- Fully responsive layout
-- Smooth scroll navigation
-- Mobile-friendly menu toggle
-- Animated skills marquee (smaller screens)
-- Back to top button
+A Pomodoro Chrome extension with features like auto start darkmode persistent data and long breaks. (Improved styles planned)
 
----
+**Tech Used:** React, TailwindCSS, Chrome Extensions API, JavaScript
 
-## Demo
-
-https://leakoo-portfolio.vercel.app
+ • [GitHub Repo](https://github.com/leakoo/pomodoro-chrome-extension)
 
 ---
 
